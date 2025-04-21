@@ -48,15 +48,15 @@ We implemented two deep learning models for RUL regression:
 
 * Faster to train but slightly less accurate in this task.
 
+### 📈 Performance Comparison
+
+The performance of the models was evaluated using three key metrics: Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Mean Absolute Error (MAE). These metrics provide insight into the accuracy of the predictions made by each model, allowing for a comprehensive comparison of their effectiveness in predicting RUL.
+
 |     Model     |      MSE      |      RMSE      |      MAE      |
 | ------------- | ------------- |  ------------- | ------------- |
 |     LSTM      |   242.34      |    15.57       |    11.26      |
 |     GRU       |   365.82      |    19.13       |    13.91      |
 
-
-Model | MSE | RMSE | MAE
-LSTM | 242.34 | 15.57 | 11.26
-GRU | 365.82 | 19.13 | 13.91
 
 ### 🧠  Conclusion
 
