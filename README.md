@@ -17,6 +17,7 @@ Each engine runs from a healthy state to system failure. The objective is to pre
 ### 🔬 Experimental Scenario
 
 -> Each time series represents a different engine trajectory.
+
 -> Engines start with unknown wear and degrade over time.
 -> Training sequences end at failure; test sequences end before failure.
 -> Goal: Predict how many cycles remain (RUL) at each test point.
