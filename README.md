@@ -18,12 +18,37 @@ Each engine runs from a healthy state to system failure. The objective is to pre
 
 * Each time series represents a different engine trajectory.
 
--> Engines start with unknown wear and degrade over time.
--> Training sequences end at failure; test sequences end before failure.
--> Goal: Predict how many cycles remain (RUL) at each test point.
+* Engines start with unknown wear and degrade over time.
+
+* Training sequences end at failure; test sequences end before failure.
+
+* Goal: Predict how many cycles remain (RUL) at each test point.
 
 Data includes:
 
--> 3 operational settings
-<ul>21 sensor measurements </ul>
-1 unit number and 1 time index per row
+* 3 operational settings
+
+* 21 sensor measurements 
+
+* 1 unit number and 1 time index per row
+
+### 🧠 Models Used
+
+We implemented two deep learning models for RUL regression:
+
+#### ✅ LSTM
+
+* Captures long-term dependencies in sequential sensor data.
+
+* Performs better in modeling engine degradation patterns.
+
+#### ✅ GRU
+
+* More efficient with fewer parameters.
+
+* Faster to train but slightly less accurate in this task.
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
