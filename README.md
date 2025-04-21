@@ -32,7 +32,7 @@ Data includes:
 
 * 1 unit number and 1 time index per row
 
-### 🧠 Models Used
+### 🤖 Models Used
 
 We implemented two deep learning models for RUL regression:
 
@@ -48,7 +48,20 @@ We implemented two deep learning models for RUL regression:
 
 * Faster to train but slightly less accurate in this task.
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|     Model     |      MSE      |      RMSE      |      MAE      |
+| ------------- | ------------- |  ------------- | ------------- |
+|     LSTM      |   242.34      |    15.57       |    11.26      |
+|     GRU       |   365.82      |    19.13       |    13.91      |
+
+
+Model | MSE | RMSE | MAE
+LSTM | 242.34 | 15.57 | 11.26
+GRU | 365.82 | 19.13 | 13.91
+
+### 🧠  Conclusion
+
+In this project, we successfully explored the use of deep learning for Remaining Useful Life (RUL) prediction using the CMAPSS FD001 dataset. Two sequence models — LSTM and GRU — were developed and compared on their ability to learn degradation patterns from multivariate sensor data.
+
+The LSTM model consistently outperformed the GRU model across all metrics (MSE, RMSE, MAE), highlighting its strength in capturing long-term dependencies and subtle trends in time series data. GRU, while faster and more efficient, showed slightly lower accuracy.
+
+This experiment demonstrates that LSTM networks are better suited for complex prognostics tasks like RUL prediction where understanding temporal evolution is crucial. The findings also underline the potential of deep learning methods to support predictive maintenance in industrial applications by providing reliable failure predictions based on sensor signals.
